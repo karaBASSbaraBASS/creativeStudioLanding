@@ -1,0 +1,46 @@
+// mainSection
+.mainSectionWrap {
+	position: relative;
+	width: 100%;
+}
+.sectionCoverWrap {
+	position: relative;
+	background-color: #000000;
+	
+    width: 100%;
+}
+.relationRation {
+	padding-top: 56.25%;
+}
+.sectionCover__rock,
+.sectionCover__human {
+	position: absolute;
+	top: 0;
+	left: 0;
+  	background-position: center center;
+  	background-size: cover;
+  	height: 100%;
+    width: 100%;
+}
+.sectionCover__rock {
+	background-image: url(../img/mainSection/rock.png);
+}
+.sectionCover__human {
+	background-image: url(../img/mainSection/human.png);
+	opacity: 0.5;
+}
+.sectionCover__caption {
+	margin: 300px auto;
+}
+.redCaption {
+	color: #ffffff;
+	font-family: "Raleway - Extra Bold";
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 10px 14px;
+	background-color: #f84444;
+	text-align: center;
+}
+
+// mainSection end
