@@ -1,0 +1,22 @@
+/* footer */
+.footer {
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+}
+.footerPrivatePolicy {
+	background-color: #393939;
+	z-index: 5;
+
+	span {
+		color: #4f4f4f;
+		font-family: "Arial MT";
+		font-size: $usualText;
+		font-weight: 400;
+		line-height: 22px;
+		text-align: center;
+		display: block;
+		padding: 24px 0px;
+	}
+}
+/* footer end */
