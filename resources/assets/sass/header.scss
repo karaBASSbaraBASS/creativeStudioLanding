@@ -6,9 +6,12 @@
 	width: 100%;
 	position: relative;
 	box-sizing: border-box;
-	height: 97px;
-	border: 1px solid #000; 
+	height: 97px; 
 	background-color: transparent;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
 }
 .searchBox {
 	display: block;
@@ -16,7 +19,7 @@
   height: 17px;
   padding: 20px; 
   cursor: pointer;
-  background: url(/img/icons/search.svg) no-repeat center center;
+  background: url(../img/icons/search.svg) no-repeat center center;
 	background-size: 17px auto;
 }
 
@@ -26,7 +29,7 @@
   height: 17px;
   padding: 20px; 
   cursor: pointer;
-  background: url(/img/icons/logo.svg) no-repeat center center;
+  background: url(../img/icons/logo.svg) no-repeat center center;
 	background-size: 17px auto;
 }
 .navbar {
@@ -35,7 +38,7 @@
 	height: 17px;
 	padding: 20px; 
 	cursor: pointer;
-	background: url(/img/icons/menu.svg) no-repeat center center;
+	background: url(../img/icons/menu.svg) no-repeat center center;
 	background-size: 17px auto;
 }
 

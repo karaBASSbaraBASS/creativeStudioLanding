@@ -1,9 +1,9 @@
 $(document).ready(function() {
 // scroll on arrow
 	$('.arrowDown__link').on('click', function(event) {
-	  event.preventDefault();
-	  var advantages = $('.advantages').offset().top - 100;
-	  $('body, html').animate({scrollTop: advantages}, 500);
+		event.preventDefault();
+		var advantages = $('.advantages').offset().top - 100;
+		$('body, html').animate({scrollTop: advantages}, 500);
 	});
 // scroll on arrow end
 // pages with hash

@@ -181,6 +181,7 @@ dl, ol, ul {
       -ms-flex-direction: column;
           flex-direction: column;
   flex: 1 0 auto;
+  position: relative;
 }
 .content {
   width: 100%;
