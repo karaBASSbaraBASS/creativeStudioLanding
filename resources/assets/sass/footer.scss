@@ -3,11 +3,13 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	width: 100%;
+	background-color: $dark-background-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .footerPrivatePolicy {
-	background-color: #393939;
 	z-index: 5;
-
 	span {
 		color: #4f4f4f;
 		font-family: "Arial MT";
@@ -18,5 +20,71 @@
 		display: block;
 		padding: 24px 0px;
 	}
+}
+.logo {
+	width: 17px;
+	height: 17px;
+}
+.footerSocialIcons {
+	display: flex;
+	justify-content: center;
+}
+.footerColumn {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 80px 0 40px 0;
+	.iconLink {
+		width: 19px;
+		height: 19px;
+		padding: 10px; 
+		svg g use{
+			transition: all 0.3s;
+			fill: $color-contrast-white;
+		}
+		svg g {
+			opacity: 1;
+		}
+		&:hover {
+			svg g use{
+				fill: $color-red;
+			}
+		} 
+	}	
+}
+.navMenu {
+	a {
+		color: $color-contrast-white;
+		font-family: $content-font-family;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 40px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+.someBigCaption {
+	color: $color-contrast-white;
+	font-family: $content-font-family;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+.someSmallCaption {
+	color: $color-contrast-white;
+	font-family: $content-font-family;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 40px;
+}
+.footerMenuColumns {
+	display: flex;
+	justify-content: space-between;
+}
+.subscribeForm {
+	display: flex;
+	flex-direction: column;
 }
 /* footer end */

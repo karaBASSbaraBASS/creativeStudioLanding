@@ -15,7 +15,7 @@
 		color: $dark-background-color;
 		font-family: $title-font-family;
 		font-size: 23px;
-		font-weight: 400;
+		font-weight: 700;
 		text-transform: uppercase;
 		text-align: center;
 	}
@@ -30,13 +30,6 @@
 	h3 {
 		margin-bottom: 20px;
 	}
-	p {
-		color: $color-main-gray;
-		font-family: $content-font-family;
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 26px;
-	}
 }
 .textImgRow__image {
 	padding-right: 0px !important;
@@ -49,7 +42,7 @@ h3 {
 	color: $dark-background-color;
 	font-family: $title-font-family;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 42.73px;
 	text-transform: uppercase;
 }
@@ -64,18 +57,54 @@ h3 {
 .textImgRow + .textImgRow {
 	margin-top: 50px;
 }
+.twoColumnsText {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 130px 55px 20px 55px;
+	position: relative;
+	background-position: 0px 135px;
+	background-image: url(../img/icons/line70.svg);
+	background-repeat: no-repeat;
+	&__item{
+		padding: 0 30px !important; 
+	}
+}
+.buttonsBlock {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 170px;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		background-image: url(../img/icons/line100.svg);
+		background-repeat: no-repeat;
+		height: 100px;
+		width: 2px;
+		bottom: -50px;
+		left: calc(50% - 1px);
+	}
+}
+
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) { 
-	
+	.twoColumnsText {
+		background-image: none;
+	}
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-	.textImgRow--revert {
+	.twoColumnsText {
+		flex-wrap: wrap;
+		border-top: 1px solid $color-main-gray;
+	}
+	.textImgRow {
 		.textImgRow__caption {
-			order: 0; 
+			order: 1; 
 		}
 		.textImgRow__image {
-			order: 1;
+			order: 0;
 		}
 	}
 }

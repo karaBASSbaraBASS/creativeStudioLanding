@@ -130,9 +130,7 @@ body {
   flex-direction: column;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Pragmatica C";
-  font-weight: 300;
-  color: #333;
+  font-weight: 700;
 }
 p {
   line-height: 22px;
@@ -194,9 +192,16 @@ dl, ol, ul {
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  background-color: #fff;
+  background-color: $color-contrast-white;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,.75);
 }
 .mainWrap {
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,.75);
 }
+p {
+  color: $color-main-gray;
+  font-family: $content-font-family;
+  font-size: 14px;
+  font-weight: 400;
+}
+

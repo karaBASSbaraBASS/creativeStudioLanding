@@ -1,0 +1,29 @@
+/* button */
+.button	{
+	padding: 15px 30px;
+	cursor: pointer;
+	font-family: $title-font-family;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: background-color 0.3s;
+	margin: 10px; 
+	
+}
+.mainButton {
+	background-color: $color-red;
+	color: $color-contrast-white;
+	&:hover {
+		background-color: $color-button-green;
+		color: $color-contrast-white;
+	}
+}
+.secButton {
+	border: 2px solid $color-button-gray;
+	color: $color-dark-gray;
+	box-sizing: border-box;
+	&:hover {
+		background-color: $color-button-gray;
+	}
+}
+/* button end */

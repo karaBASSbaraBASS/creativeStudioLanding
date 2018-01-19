@@ -1,0 +1,25 @@
+/* ourProjects */
+.sectionOurProjects {
+	overflow: hidden;
+}
+.darkHeadWrapper {
+	height: 600px;
+	background-color: $dark-background-color;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.latestProjectsHead {
+	text-align: center;
+	margin-top: 130px;
+	.sectionHeader__title {
+		color: $color-contrast-white;
+		margin-bottom: 25px;
+	}
+	&__nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
+/* ourProjects end */
