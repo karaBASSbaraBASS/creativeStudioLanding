@@ -33,23 +33,23 @@
 	display: flex;
 	flex-wrap: nowrap;
 	margin: 80px 0 40px 0;
-	.iconLink {
-		width: 19px;
-		height: 19px;
-		padding: 10px; 
+}
+.iconLink {
+	width: 19px;
+	height: 19px;
+	padding: 10px; 
+	svg g use{
+		transition: all 0.3s;
+		fill: $color-contrast-white;
+	}
+	svg g {
+		opacity: 1;
+	}
+	&:hover {
 		svg g use{
-			transition: all 0.3s;
-			fill: $color-contrast-white;
+			fill: $color-red;
 		}
-		svg g {
-			opacity: 1;
-		}
-		&:hover {
-			svg g use{
-				fill: $color-red;
-			}
-		} 
-	}	
+	} 
 }
 .navMenu {
 	a {
