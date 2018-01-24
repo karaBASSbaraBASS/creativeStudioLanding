@@ -28,11 +28,12 @@
 .footerSocialIcons {
 	display: flex;
 	justify-content: center;
+
 }
 .footerColumn {
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 80px 0 40px 0;
+	margin: 80px -15px 40px;
 }
 .iconLink {
 	width: 19px;
@@ -87,4 +88,89 @@
 	display: flex;
 	flex-direction: column;
 }
+.footerColumn__subscribe {
+	background-color: inherit;
+	position: relative;
+	width: 340px;
+	
+	input {
+		background-color: inherit;
+		border: none;
+		width: 100%;
+		padding: 15px 50px 15px 20px;
+		color: $color-contrast-white;
+		font-family: "Open Sans";
+		font-size: 12px;
+		font-weight: 400;
+		opacity: 0.2;
+		border: 2px solid $color-contrast-white;
+		transition: opacity 0.3s;
+		&:hover,
+		&:focus {
+			opacity: 1;
+			& + button{
+				svg {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	button {
+		background-color: inherit;
+		position: absolute;
+		top: calc(50% - 24px);
+		right: 0px;
+		cursor: pointer;
+		padding: 15px;
+		z-index: 10;
+		svg {
+			width: 15px;
+			height: 15px;
+			opacity: 0.2;
+			animation: pulse 5s infinite;
+		}
+	}
+	
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1100px) {
+	
+}
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) { 
+	.footerColumn {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.footerSocialIcons {
+		order: 3;
+		margin: 70px -15px 40px; 
+	}
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+	.footerColumn {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+
+}
+/* media */
 /* footer end */

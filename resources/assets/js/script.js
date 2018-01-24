@@ -56,3 +56,35 @@ function checkSection() {
 	});
 }
 // pages with hash script end
+// owl carusel
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    nav:false,
+    responsive:{
+        0:{
+            items:3,
+            nav:false,
+            loop:true
+        },
+        768:{
+            items:4,
+            nav:false,
+            loop:true
+        },
+        992:{
+            items:6,
+            nav:true,
+            loop:true
+        },
+        1100:{
+            items:6,
+            nav:false,
+            loop:true
+        }
+    }
+});
+// owl carusel end

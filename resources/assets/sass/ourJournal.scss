@@ -1,0 +1,55 @@
+/* ourJournal */
+.ourJournalWrap {
+	background-color: $color-gray-wrapper;
+	height: 670px;
+}
+.centralColumn {
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: row; 
+}
+.ourJournal__cover {
+	padding-top: 73%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ourJournalFoto {
+	position: absolute;
+	width: 100%;
+	top: -100px;
+	right: -150px;
+}
+.centralColumn__caption {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	.sectionHeader__title {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	.sectionHeader__divider {
+		height: 7px;
+	    margin: 40px 0px;
+	    display: flex;
+	    justify-content: flex-start;
+	}
+	.button	{
+		margin: 0px; 
+	}
+	.readMore {
+		margin-top: 20px;
+		z-index: 10;
+	}
+}
+
+.centralColumn__overlay {
+	position: absolute;
+	bottom: 40px;
+	left: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+/* ourJournal end */
